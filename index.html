@@ -1,53 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rijin Johnson | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0077ff" />
+  <title>Rijin’s Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-<header>
-<h1>Rijin Johnson</h1>
-<p>BCA Student | SB College, Changanassery</p>
-<nav>
-<a href="#about">About</a>
-<a href="#works">My Works</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home" aria-label="Go to top">Rijin</a>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="primary-nav" class="nav-links">
+        <li><a href="#home">Welcome</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Creative Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Hero / Welcome -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <h1>Hi, I’m <span class="highlight">Rijin Johnson</span> 👋</h1>
+      <p class="tagline">Aspiring Designer & Developer</p>
+      <a class="btn-primary" href="#about">Learn more</a>
+    </div>
+  </section>
 
-<section id="about">
-<h2>About Me</h2>
-<p>Hello! I’m Rijin Johnson, a college student from Alappuzha. Currently pursuing my Bachelor of Computer Applications (BCA) at SB College, Changanassery. I’m passionate about technology, coding, and creative projects.</p>
-</section>
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <div class="about-image">
+          <!-- Replace profile.jpg with your photo -->
+          <img src="rijin.jpg" alt="Portrait of Rijin Johnson" />
+        </div>
+        <div class="about-text">
+          <p>
+            I’m <strong>Rijin Johnson</strong>, currently pursuing a
+            <strong>Bachelor’s in Computer Applications</strong> at
+            <strong>St. Berchmans College, Changanassery</strong>.
+          </p>
+          <p>
+            I’m passionate about <strong>video editing</strong> 🎬 and
+            <strong>graphic design</strong> 🎨. My aim is to blend creativity and technology
+            to craft delightful, functional digital experiences.
+          </p>
+          <p>
+            When I’m not designing or editing, I’m usually unwinding with a film or a kickabout.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Creative Skills -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Creative Skills</h2>
+      <div class="skill-cards">
+        <article class="skill-card" aria-label="Video Editing">
+          <div class="skill-emoji" aria-hidden="true">🎬</div>
+          <h3>Video Editing</h3>
+          <p>Cutting, pacing, transitions, sound design, and story-first edits.</p>
+        </article>
+        <article class="skill-card" aria-label="Graphics Designing">
+          <div class="skill-emoji" aria-hidden="true">🎨</div>
+          <h3>Graphics Designing</h3>
+          <p>Logos, posters, thumbnails, social media visuals, and clean layouts.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<section id="works">
-<h2>My Works</h2>
-<ul>
-<li>SQL & Python mini projects</li>
-<li>Basic C programming exercises</li>
-<li>Creative video edits for YouTube & Instagram</li>
-<li>Ongoing portfolio website project</li>
-</ul>
-</section>
+  <!-- Contact / Social -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Connect With Me</h2>
+      <p class="contact-sub">I’m just a click away — feel free to say hello.</p>
+      <div class="social-links">
+        <a
+          href="https://www.instagram.com/rij.inn_?igsh=MWp2b2FsZWplamhpdw=="
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram profile"
+        >
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://youtube.com/@rjfcutz9295?si=yXnulqiVdrAc8V5f"
+          target="_blank"
+          rel="noopener"
+          aria-label="YouTube channel"
+        >
+          <i class="fab fa-youtube" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
 
-
-<section id="contact">
-<h2>Contact Me</h2>
-<p>You can connect with me through the following platforms:</p>
-<div class="socials">
-<a href="mailto:youremail@example.com">Email</a>
-<a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
-<a href="https://youtube.com/@yourchannel" target="_blank">YouTube</a>
-</div>
-</section>
-
-
-<footer>
-<p>© 2025 Rijin Johnson. All rights reserved.</p>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Rijin Johnson</p>
+    </div>
+  </footer>
 </body>
 </html>
