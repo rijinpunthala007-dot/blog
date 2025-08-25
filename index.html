@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0077ff" />
+  <meta name="theme-color" content="#4F46E5" />
   <title>Rijin’s Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-  <!-- Font Awesome for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Header / Navigation -->
+
   <header>
     <nav class="container">
       <a class="logo" href="#home" aria-label="Go to top">Rijin</a>
@@ -21,13 +25,15 @@
       <ul id="primary-nav" class="nav-links">
         <li><a href="#home">Welcome</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Creative Skills</a></li>
+        <li><a href="#gallery">Posters</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
     </nav>
   </header>
 
-  <!-- Hero / Welcome -->
   <section id="home" class="hero">
     <div class="container hero-inner">
       <h1>Hi, I’m <span class="highlight">Rijin Johnson</span> 👋</h1>
@@ -36,15 +42,10 @@
     </div>
   </section>
 
-  <!-- About -->
   <section id="about" class="about">
     <div class="container">
       <h2>About Me</h2>
       <div class="about-container">
-        <div class="about-image">
-          <!-- Replace profile.jpg with your photo -->
-          <img src="rijin.jpg" alt="Portrait of Rijin Johnson" />
-        </div>
         <div class="about-text">
           <p>
             I’m <strong>Rijin Johnson</strong>, currently pursuing a
@@ -52,64 +53,68 @@
             <strong>St. Berchmans College, Changanassery</strong>.
           </p>
           <p>
-            I’m passionate about <strong>video editing</strong> 🎬 and
-            <strong>graphic design</strong> 🎨. My aim is to blend creativity and technology
+            I’m passionate about <strong>graphic design</strong> 🎨. My aim is to blend creativity and technology
             to craft delightful, functional digital experiences.
           </p>
           <p>
-            When I’m not designing or editing, I’m usually unwinding with a film or a kickabout.
+            When I’m not designing, I’m usually unwinding with a film or a kickabout.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Creative Skills -->
-  <section id="skills" class="skills">
+  <section id="gallery" class="gallery">
     <div class="container">
-      <h2>Creative Skills</h2>
-      <div class="skill-cards">
-        <article class="skill-card" aria-label="Video Editing">
-          <div class="skill-emoji" aria-hidden="true">🎬</div>
-          <h3>Video Editing</h3>
-          <p>Cutting, pacing, transitions, sound design, and story-first edits.</p>
-        </article>
-        <article class="skill-card" aria-label="Graphics Designing">
-          <div class="skill-emoji" aria-hidden="true">🎨</div>
-          <h3>Graphics Designing</h3>
-          <p>Logos, posters, thumbnails, social media visuals, and clean layouts.</p>
-        </article>
+      <h2>My Posters</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="Burg.jpg" alt="Poster Design 1">
+          <div class="gallery-overlay">
+            <i class="fas fa-image"></i>
+            <h3>Burger</h3>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="Messi.jpg" alt="Poster Design 2">
+          <div class="gallery-overlay">
+            <i class="fas fa-image"></i>
+            <h3>Messi</h3>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="debruyne.jpg" alt="Poster Design 3">
+          <div class="gallery-overlay">
+            <i class="fas fa-image"></i>
+            <h3>Debreyune</h3>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="suii.jpg" alt="Poster Design 4">
+          <div class="gallery-overlay">
+            <i class="fas fa-image"></i>
+            <h3>Cristiano</h3>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact / Social -->
   <section id="contact" class="contact">
     <div class="container">
       <h2>Connect With Me</h2>
       <p class="contact-sub">I’m just a click away — feel free to say hello.</p>
       <div class="social-links">
-        <a
-          href="https://www.instagram.com/rij.inn_?igsh=MWp2b2FsZWplamhpdw=="
-          target="_blank"
-          rel="noopener"
-          aria-label="Instagram profile"
-        >
+        <a href="https://www.instagram.com/rij.inn_?igsh=MWp2b2FsZWplamhpdw==" target="_blank" rel="noopener" aria-label="Instagram profile">
           <i class="fab fa-instagram" aria-hidden="true"></i>
         </a>
-        <a
-          href="https://youtube.com/@rjfcutz9295?si=yXnulqiVdrAc8V5f"
-          target="_blank"
-          rel="noopener"
-          aria-label="YouTube channel"
-        >
+        <a href="https://youtube.com/@rjfcutz9295?si=yXnulqiVdrAc8V5f" target="_blank" rel="noopener" aria-label="YouTube channel">
           <i class="fab fa-youtube" aria-hidden="true"></i>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Rijin Johnson</p>
